@@ -1,26 +1,32 @@
 .topnav {
-  background-color: $color-grey-dark-3;
+  background-color: $color-white;
+  font-weight: 700;
 
   &__container {
     margin: 0 auto;
     max-width: $grid-width;
     position: relative;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   &__logo-box {
     position: absolute;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
   }
 
   &__logo {
+    display: inline-block;
     font-size: 2rem;
     text-transform: uppercase;
-    color: $color-white;
+    color: $color-grey-dark-3;
     text-decoration: none;
-    line-height: 3rem;
+    line-height: 2.5rem;
+    text-align: center;
+    vertical-align: middle;
+
+    &:hover {
+      color: $color-tertiary-dark;
+    }
 
     &--name {
       display: block;
@@ -40,25 +46,23 @@
   &__item {
     display: inline-block;
     text-decoration: none;
-
-    &:not(:last-child) {
-      padding-right: 6rem;
-    }
   }
 
   &__link {
     text-decoration: none;
     display: inline-block;
+    text-transform: uppercase;
+    padding: 3rem 3rem;
 
     &:link,
     &:visited {
-      color: $color-white;
+      color: $color-grey-dark-3;
       font-size: 2rem;
     }
 
     &:hover,
     &:active {
-
+      color: $color-tertiary-dark;
     }
   }
 }

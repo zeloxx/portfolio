@@ -292,23 +292,27 @@ body {
     letter-spacing: 2px; }
 
 .topnav {
-  background-color: #333; }
+  background-color: #fff;
+  font-weight: 700; }
   .topnav__container {
     margin: 0 auto;
     max-width: 114rem;
-    position: relative;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem; }
+    position: relative; }
   .topnav__logo-box {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%); }
   .topnav__logo {
+    display: inline-block;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #fff;
+    color: #333;
     text-decoration: none;
-    line-height: 3rem; }
+    line-height: 2.5rem;
+    text-align: center;
+    vertical-align: middle; }
+    .topnav__logo:hover {
+      color: #5643fa; }
     .topnav__logo--name {
       display: block; }
     .topnav__logo--title {
@@ -320,11 +324,13 @@ body {
   .topnav__item {
     display: inline-block;
     text-decoration: none; }
-    .topnav__item:not(:last-child) {
-      padding-right: 6rem; }
   .topnav__link {
     text-decoration: none;
-    display: inline-block; }
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 3rem 3rem; }
     .topnav__link:link, .topnav__link:visited {
-      color: #fff;
+      color: #333;
       font-size: 2rem; }
+    .topnav__link:hover, .topnav__link:active {
+      color: #5643fa; }
