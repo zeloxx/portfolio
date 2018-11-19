@@ -265,12 +265,13 @@ body {
     width: calc((100% - 6rem) / (5/4) + ((4/5 - 1/5) * 6rem)); }
 
 .header {
-  background-image: linear-gradient(to bottom, white, #28b485);
+  background-image: linear-gradient(to bottom, white, rgba(255, 185, 0, 0.8)), url(../img/hero-test.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
   height: 85vh;
-  text-align: center; }
+  text-align: center;
+  margin-top: 8.35rem; }
   .header__content-container {
     position: absolute;
     top: 50%;
@@ -293,7 +294,11 @@ body {
 
 .topnav {
   background-color: #fff;
-  font-weight: 700; }
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
   .topnav__container {
     margin: 0 auto;
     max-width: 114rem;
