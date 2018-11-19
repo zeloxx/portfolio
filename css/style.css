@@ -67,16 +67,14 @@ body {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
+  font-weight: 500;
   color: #777; }
 
 .heading-primary {
-  color: #fff;
+  color: #333;
   text-transform: uppercase;
-  margin-bottom: 6rem;
-  backface-visibility: hidden;
-  /*this fixes a bug for some rigid behavior animations can have*/ }
+  font-size: 6rem;
+  display: block; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -101,21 +99,15 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 2px;
-  transition: all .2s; }
+  display: block;
+  color: #333;
+  letter-spacing: 2px; }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
-  .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -159,6 +151,65 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
+
+.btn, .btn:link, .btn:visited {
+  background-color: #5643fa;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: .6rem;
+  padding: 2rem 6rem;
+  font-size: 1.6rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active, .btn:focus {
+  outline: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
+
+.btn--animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
+  /*automatically sets styles of animation at 0% before animation begins*/ }
+
+.btn--center {
+  display: block;
+  margin: 0 auto; }
+
+.btn-text:link, .btn-text:visited {
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  transition: all .1s; }
+
+.btn-text:hover {
+  background-color: #5643fa;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
 
 .row {
   max-width: 114rem;
@@ -212,6 +263,33 @@ body {
     width: calc((100% - 6rem) / (5/3) + ((3/5 - 2/5) * 6rem)); }
   .row .col-4-of-5 {
     width: calc((100% - 6rem) / (5/4) + ((4/5 - 1/5) * 6rem)); }
+
+.header {
+  background-image: linear-gradient(to bottom, white, #28b485);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 85vh;
+  text-align: center; }
+  .header__content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__title {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 6rem;
+    display: block;
+    white-space: nowrap;
+    font-weight: 700; }
+  .header__subtitle {
+    color: #333;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    letter-spacing: 2px; }
 
 .topnav {
   background-color: #333; }
