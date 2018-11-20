@@ -1,0 +1,21 @@
+.section-about {
+  padding: 15rem 0;
+
+  &__icon-title-container {
+    text-align: center;
+  }
+
+  &__icon {
+    font-size: 4rem;
+    background-color: $color-tertiary-light;
+    color: $color-white;
+    border-radius: 10rem;
+    padding: 2rem;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 100rem;
+  }
+
+}
