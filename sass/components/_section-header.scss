@@ -1,12 +1,12 @@
-.section-icon-title {
+.section-header {
   text-align: center;
 
   &__icon {
     font-size: 4rem;
     background-color: $color-tertiary-light;
     color: $color-white;
-    border-radius: 10rem;
-    padding: 2rem;
+    border-radius: .5rem;
+    padding: 2.5rem;
   }
 
   &__title {

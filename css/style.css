@@ -213,20 +213,53 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
-.section-icon-title {
+.contact-card {
+  background-color: #333;
+  text-align: center;
+  height: 40rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .contact-card__icon {
+    margin-top: 5rem;
+    font-size: 4rem;
+    background-color: #fff;
+    color: #2998ff;
+    border-radius: 10rem;
+    padding: 2rem; }
+  .contact-card__header {
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    color: #999;
+    letter-spacing: 2px; }
+    .contact-card__header--dark {
+      color: #333; }
+    .contact-card__header--light {
+      color: #fff; }
+  .contact-card__body {
+    margin-top: 5rem;
+    color: #fff; }
+    .contact-card__body--dark {
+      color: #333; }
+    .contact-card__body--light {
+      color: #fff; }
+
+.section-header {
   text-align: center; }
-  .section-icon-title__icon {
+  .section-header__icon {
     font-size: 4rem;
     background-color: #2998ff;
     color: #fff;
-    border-radius: 10rem;
-    padding: 2rem; }
-  .section-icon-title__title {
+    border-radius: .5rem;
+    padding: 2.5rem; }
+  .section-header__title {
     color: #333;
     text-transform: uppercase;
     font-size: 6rem;
     display: block; }
-    .section-icon-title__title--white {
+    .section-header__title--white {
       color: #fff; }
 
 .row {
