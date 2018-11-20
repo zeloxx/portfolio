@@ -211,6 +211,20 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
+.section-icon-title {
+  text-align: center; }
+  .section-icon-title__icon {
+    font-size: 4rem;
+    background-color: #2998ff;
+    color: #fff;
+    border-radius: 10rem;
+    padding: 2rem; }
+  .section-icon-title__title {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 6rem;
+    display: block; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -340,14 +354,6 @@ body {
 
 .section-about {
   padding: 15rem 0; }
-  .section-about__icon-title-container {
-    text-align: center; }
-  .section-about__icon {
-    font-size: 4rem;
-    background-color: #2998ff;
-    color: #fff;
-    border-radius: 10rem;
-    padding: 2rem; }
   .section-about__img {
     width: 100%;
     border-radius: 100rem; }
