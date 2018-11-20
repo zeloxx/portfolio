@@ -14,5 +14,9 @@
     text-transform: uppercase;
     font-size: 6rem;
     display: block;
+
+    &--white {
+      color: $color-white;
+    }
   }
 }
