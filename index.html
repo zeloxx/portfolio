@@ -16,8 +16,8 @@
     <div class="topnav__container">
       <div class="topnav__logo-box">
         <a href="#" class="topnav__logo">
-          <span class="topnav__logo--name">Robert Yeakel</span>
-          <span class="topnav__logo--title">Web Developer</span>
+          <span class="topnav__logo--main">Robert Yeakel</span>
+          <span class="topnav__logo--sub">Web Developer</span>
         </a>
       </div>
       <ul class="topnav__list">
@@ -37,83 +37,112 @@
     </div>
   </div>
 
-  <header class="header">
-    <div class="header__content-container">
-      <h1 class="header__title u-margin-bottom-small">I build stuff for the internet</h1>
-      <h2 class="header__subtitle u-margin-bottom-big">Lorem ipsum dolor sit amet.</h2>
-      <a href="#" class="btn btn-text btn--white btn--center">View Portfolio</a>
+  <header class="hero">
+    <div class="hero__container">
+      <h1 class="hero__heading">I build stuff for the internet</h1>
+      <h2 class="hero__sub-heading">Lorem ipsum dolor sit amet.</h2>
+      <p class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque inventore cumque nisi omnis saepe excepturi praesentium, reiciendis magni atque autem iusto perspiciatis similique eligendi! Commodi mollitia adipisci odio officiis similique.</p>
+      <a href="#" class="btn">View Portfolio</a>
     </div>
   </header>
 
   <main>
 
-    <section class="section-portfolio">
-      <div class="row">
-        <div class="section-header">
-          <ion-icon name="browsers" class="section-header__icon u-margin-bottom-small"></ion-icon>
-          <h1 class="section-header__title section-header__title--white u-margin-bottom-medium">Portfolio</h1>
-        </div>
+    <section class="section">
+      <div class="section__header">
+        <h1 class="section__heading">Section Heading</h1>
+        <ion-icon class="section__icon"></ion-icon>
       </div>
-      <div class="row">
-        <div class="col-1-of-3">
-          <img src="https://picsum.photos/600/400" alt="Portfolio" class="section-portfolio__img">
-        </div>
-        <div class="col-1-of-3">
-          <img src="https://picsum.photos/600/400" alt="Portfolio" class="section-portfolio__img">
-        </div>
-        <div class="col-1-of-3">
-          <img src="https://picsum.photos/600/400" alt="Portfolio" class="section-portfolio__img">
-        </div>
-      </div>
-    </section>
-
-    <section class="section-about">
-      <div class="row">
-        <div class="section-header">
-          <ion-icon name="person" class="section-header__icon u-margin-bottom-small"></ion-icon>
-          <h1 class="section-header__title u-margin-bottom-medium">About</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">
-          <img src="https://picsum.photos/400/400" alt="about" class="section-about__img">
-        </div>
-        <div class="col-2-of-3">
-          <h2 class="heading-secondary u-margin-bottom-small">Hi, I'm Robert</h2>
-          <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus ab ipsam in omnis
-            animi voluptates esse exercitationem sequi sapiente odio possimus, architecto minima ipsum quo temporibus
-            officiis, qui cumque quis.</p>
-          <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam eius atque
-            quibusdam voluptates expedita, culpa esse dolorum officia labore animi, itaque repudiandae repellat placeat
-            enim. Voluptates dolor tempora, officia magni ab iure optio laboriosam deserunt animi libero explicabo,
-            fugit temporibus aspernatur! Ducimus error nisi molestias culpa, sed, nostrum odio tenetur magni id
-            cupiditate suscipit accusantium, ratione iusto quo aliquam!</p>
-          <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus ab ipsam in omnis
-            animi voluptates esse exercitationem sequi sapiente odio possimus, architecto minima ipsum quo temporibus
-            officiis, qui cumque quis.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-contact">
-        <div class="row">
-          <div class="section-header">
-            <ion-icon name="person" class="section-header__icon u-margin-bottom-small"></ion-icon>
-            <h1 class="section-header__title">Contact</h1>
+      <div class="section__body">
+        <div class="portfolio">
+          <div class="portfolio__header">
+            <h1 class="portfolio__heading">Portfolio Heading</h1>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-2">
-            <div class="contact-card">
-              <ion-icon name="mail" class="contact-card__icon margin-bottom-small"></ion-icon>
-              <h2 class="contact-card__header">Email</h2>
-              <p class="contact-card__body paragraph">Email me anytime</p>
-              <footer class="contact-card__footer">robertyeakeltroidL@gmail.com</footer>
+          <div class="portfolio__body">
+            <div class="card">
+              <div class="card__header">
+                <ion-icon class="card__icon"></ion-icon>
+                <h1 class="card__heading">Card Heading Text</h1>
+              </div>
+              <div class="card__body">
+                <div class="card__text">Card Body Text</div>
+              </div>
+              <div class="card__footer">
+                <div class="card__text">Card Footer Text</div>
+              </div>
             </div>
           </div>
-          <div class="col-1-of-2"></div>
+          <div class="portfolio__footer">
+            <div class="portfolio__text">Portfolio Footer Text</div>
+          </div>
         </div>
+      </div>
+      <div class="section__footer"></div>
+    </section>
+
+    <section class="section">
+        <div class="section__header">
+          <h1 class="section__heading">Section Heading</h1>
+          <ion-icon class="section__icon"></ion-icon>
+        </div>
+        <div class="section__body">
+          <div class="about">
+            <div class="about__header">
+              <h1 class="about__heading">About Heading</h1>
+            </div>
+            <div class="about__body">
+              <div class="card">
+                <div class="card__header">
+                  <ion-icon class="card__icon"></ion-icon>
+                  <h1 class="card__heading">Card Heading Text</h1>
+                </div>
+                <div class="card__body">
+                  <div class="card__text">Card Body Text</div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__text">Card Footer Text</div>
+                </div>
+              </div>
+            </div>
+            <div class="about__footer">
+              <div class="about__text">About Footer Text</div>
+            </div>
+          </div>
+        </div>
+        <div class="section__footer"></div>
       </section>
+
+      <section class="section">
+          <div class="section__header">
+            <h1 class="section__heading">Section Heading</h1>
+            <ion-icon class="section__icon"></ion-icon>
+          </div>
+          <div class="section__body">
+            <div class="contact">
+              <div class="contact__header">
+                <h1 class="contact__heading">Contact Heading</h1>
+              </div>
+              <div class="contact__body">
+                <div class="card">
+                  <div class="card__header">
+                    <ion-icon class="card__icon"></ion-icon>
+                    <h1 class="card__heading">Card Heading Text</h1>
+                  </div>
+                  <div class="card__body">
+                    <div class="card__text">Card Body Text</div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="card__text">Card Footer Text</div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact__footer">
+                <div class="contact__text">Contact Footer Text</div>
+              </div>
+            </div>
+          </div>
+          <div class="section__footer"></div>
+        </section>
 
   </main>
 

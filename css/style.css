@@ -68,56 +68,72 @@ body {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  color: #777; }
+  color: #888; }
 
-.heading-primary {
-  color: #333;
-  text-transform: uppercase;
-  font-size: 6rem;
-  display: block; }
-  .heading-primary--white {
-    color: #fff; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation: moveInLeft 1s ease-out; }
-    @media only screen and (max-width: 37.5em) {
-      .heading-primary--main {
-        letter-spacing: 1rem;
-        font-size: 5rem; } }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.7rem;
-    animation: moveInRight 1s ease-out; }
-    @media only screen and (max-width: 37.5em) {
-      .heading-primary--sub {
-        letter-spacing: .5rem; } }
-
-.heading-secondary {
+.heading {
   font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
+  color: #888;
   display: block;
-  color: #333;
-  letter-spacing: 2px; }
-  @media only screen and (max-width: 56.25em) {
-    .heading-secondary {
-      font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .heading-secondary {
-      font-size: 2.5rem; } }
-
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
   text-transform: uppercase; }
+  .heading--extra-small {
+    font-size: 1.6rem; }
+  .heading--small {
+    font-size: 2.25rem; }
+  .heading--large {
+    font-size: 4.75rem; }
+  .heading--extra-large {
+    font-size: 6rem; }
+  .heading--white {
+    color: #fff; }
+  .heading--black {
+    color: #000; }
+  .heading--grey-light {
+    color: #bebebe; }
+  .heading--grey-dark {
+    color: #333; }
+  .heading--primary {
+    color: #55c57a; }
+  .heading--primary-light {
+    color: #7ed56f; }
+  .heading--primary-dark {
+    color: #28b485; }
+  .heading--secondary-light {
+    color: #ffb900; }
+  .heading--secondary-dark {
+    color: #ff7730; }
+  .heading--tertiary-light {
+    color: #2998ff; }
+  .heading--tertiary-dark {
+    color: #5643fa; }
 
 .paragraph {
   font-size: 1.6rem; }
+  .paragraph--large {
+    font-size: 2rem; }
+  .paragraph--extra-large {
+    font-size: 3rem; }
+  .paragraph--white {
+    color: #fff; }
+  .paragraph--black {
+    color: #000; }
+  .paragraph--grey-light {
+    color: #bebebe; }
+  .paragraph--grey-dark {
+    color: #333; }
+  .paragraph--primary {
+    color: #55c57a; }
+  .paragraph--primary-light {
+    color: #7ed56f; }
+  .paragraph--primary-dark {
+    color: #28b485; }
+  .paragraph--secondary-light {
+    color: #ffb900; }
+  .paragraph--secondary-dark {
+    color: #ff7730; }
+  .paragraph--tertiary-light {
+    color: #2998ff; }
+  .paragraph--tertiary-dark {
+    color: #5643fa; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -175,7 +191,7 @@ body {
 
 .btn--white {
   background-color: #fff;
-  color: #777; }
+  color: #333; }
   .btn--white::after {
     background-color: #fff; }
 
@@ -212,55 +228,6 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
-
-.contact-card {
-  background-color: #333;
-  text-align: center;
-  height: 40rem;
-  margin-left: auto;
-  margin-right: auto; }
-  .contact-card__icon {
-    margin-top: 5rem;
-    font-size: 4rem;
-    background-color: #fff;
-    color: #2998ff;
-    border-radius: 10rem;
-    padding: 2rem; }
-  .contact-card__header {
-    margin-top: 2rem;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: block;
-    color: #999;
-    letter-spacing: 2px; }
-    .contact-card__header--dark {
-      color: #333; }
-    .contact-card__header--light {
-      color: #fff; }
-  .contact-card__body {
-    margin-top: 5rem;
-    color: #fff; }
-    .contact-card__body--dark {
-      color: #333; }
-    .contact-card__body--light {
-      color: #fff; }
-
-.section-header {
-  text-align: center; }
-  .section-header__icon {
-    font-size: 4rem;
-    background-color: #2998ff;
-    color: #fff;
-    border-radius: .5rem;
-    padding: 2.5rem; }
-  .section-header__title {
-    color: #333;
-    text-transform: uppercase;
-    font-size: 6rem;
-    display: block; }
-    .section-header__title--white {
-      color: #fff; }
 
 .row {
   max-width: 114rem;
@@ -313,34 +280,6 @@ body {
   .row .col-4-of-5 {
     width: calc((100% - 6rem) / (5/4) + ((4/5 - 1/5) * 6rem)); }
 
-.header {
-  background-image: linear-gradient(to bottom, white, rgba(255, 185, 0, 0.8)), url(../img/hero-test.jpeg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 85vh;
-  text-align: center;
-  margin-top: 8.35rem; }
-  .header__content-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .header__title {
-    color: #333;
-    text-transform: uppercase;
-    font-size: 6rem;
-    display: block;
-    white-space: nowrap;
-    font-weight: 700; }
-  .header__subtitle {
-    color: #333;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: block;
-    letter-spacing: 2px; }
-
 .topnav {
   background-color: #fff;
   font-weight: 700;
@@ -388,6 +327,34 @@ body {
       font-size: 2rem; }
     .topnav__link:hover, .topnav__link:active {
       color: #5643fa; }
+
+.header {
+  background-image: linear-gradient(to bottom, white, rgba(255, 185, 0, 0.8)), url(../img/hero-test.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 85vh;
+  text-align: center;
+  margin-top: 8.35rem; }
+  .header__content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__title {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 6rem;
+    display: block;
+    white-space: nowrap;
+    font-weight: 700; }
+  .header__subtitle {
+    color: #333;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    letter-spacing: 2px; }
 
 .section-about {
   padding: 15rem 0; }

@@ -22,7 +22,7 @@
     display: inline-block;
     font-size: 2rem;
     text-transform: uppercase;
-    color: $color-grey-dark-3;
+    color: $color-grey-dark;
     text-decoration: none;
     line-height: 2.5rem;
     text-align: center;
@@ -32,11 +32,11 @@
       color: $color-tertiary-dark;
     }
 
-    &--name {
+    &--main {
       display: block;
     }
 
-    &--title {
+    &--sub {
       display: block;
     }
   }
@@ -46,7 +46,7 @@
     margin: auto 0;
     text-align: right;
   }
-  
+
   &__item {
     display: inline-block;
     text-decoration: none;
@@ -60,7 +60,7 @@
 
     &:link,
     &:visited {
-      color: $color-grey-dark-3;
+      color: $color-grey-dark;
       font-size: 2rem;
     }
 
