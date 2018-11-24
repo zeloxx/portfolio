@@ -1,49 +1,60 @@
-.hero {
+.c-hero {
   background-image: linear-gradient(to bottom,
     rgba($color-white, 1),
-    rgba($color-secondary-light, .8)),
+    rgba($color-tertiary-light, .8)),
     url(../img/hero-test.jpeg);
 
   background-size: cover;
   background-position: center;
-  position: relative;
   height: 85vh;
+  margin-top: 2rem;
+  position: relative;
   text-align: center;
-  margin-top: 8.35rem;
 
-  &__container {
-    @include absCenter;
+  &__content-container {
+    max-width: $grid-width;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  &__header {}
-
-  &__body {}
-
-  &__footer {}
+  &__header {
+    padding: 5rem 0;
+  }
 
   &__heading {
-    color: $color-grey-dark;
-    text-transform: uppercase;
-    font-size: 6rem;
+    color: $color-grey-darker;
     display: block;
-    white-space: nowrap;
+    font-size: 6rem;
     font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
   }
 
-  &__sub-heading {}
+  &__sub-heading {
+    color: $color-grey-dark;
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
 
   &__text {
+    font-size: 1.5rem;
     color: $color-grey-dark;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: block;
-    letter-spacing: 2px;
   }
 
-  &__list {}
-
-  &__icon {}
-
-  &__cta {}
+  &__footer {
+    background-color: rgba($color: $color-grey-darkest, $alpha: 1);
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    padding: 5rem 0;
+    transform: translate(-50%, -50%);
+  }
 }

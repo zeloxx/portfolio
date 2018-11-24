@@ -1,43 +1,40 @@
-.u-center-text {
+.u-margin-auto {
+  margin: 0 auto !important;
+}
+.u-text-center {
   text-align: center !important;
+}
+.u-text-left {
+  text-align: left !important;
+}
+.u-text-right {
+  text-align: right !important;
 }
 
 .u-margin-bottom-smallest {
-  margin-bottom: .5rem !important;
-}
-
-.u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }
 
+.u-margin-bottom-smaller {
+  margin-bottom: 3rem !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 4.5rem !important;
+}
+
 .u-margin-bottom-medium {
-  margin-bottom: 4rem !important;
-  
-  @include respond(tab-port) {
-    margin-bottom: 3rem !important;
-  }
+  margin-bottom: 6rem !important;
 }
 
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important;
-
-  @include respond(tab-port) {
-    margin-bottom: 5rem !important;
-  }
+.u-margin-bottom-large {
+  margin-bottom: 7.5rem !important;
 }
 
-.u-margin-top-smallest {
-  margin-top: .5rem !important;
+.u-margin-bottom-larger {
+  margin-bottom: 9rem !important;
 }
 
-.u-margin-top-small {
-  margin-top: 1.5rem !important;
-}
-
-.u-margin-top-medium {
-  margin-top: 4rem !important;
-}
-
-.u-margin-top-big {
-  margin-top: 8rem !important;
+.u-margin-bottom-largest {
+  margin-bottom: 10.5rem !important;
 }

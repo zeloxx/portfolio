@@ -1,4 +1,4 @@
-.topnav {
+.c-topnav {
   background-color: $color-white;
   font-weight: 700;
   position: fixed;
@@ -6,7 +6,7 @@
   width: 100%;
   z-index: 1;
 
-  &__container {
+  &__content-container {
     margin: 0 auto;
     max-width: $grid-width;
     position: relative;
@@ -21,7 +21,7 @@
   &__logo {
     display: inline-block;
     font-size: 2rem;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: $color-grey-dark;
     text-decoration: none;
     line-height: 2.5rem;
@@ -55,7 +55,7 @@
   &__link {
     text-decoration: none;
     display: inline-block;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     padding: 3rem 3rem;
 
     &:link,

@@ -1,21 +1,47 @@
-.btn {
-  &__container {}
-  
-  &__header {}
+.c-btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    // border-radius: .25rem;
+    transition: all .1s;
+    position: relative;
+    font-weight: 700;
+    font-size: $default-font-size;
 
-  &__body {}
+    //change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
 
-  &__footer {}
+  &:hover {
 
-  &__heading {}
+    &::after {
+    }
+  }
 
-  &__sub-heading {}
+  &:active,
+  &:focus {
+  }
 
-  &__text {}
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-darkest;
+  }
+}
 
-  &__list {}
+.c-btn-text {
 
-  &__icon {}
+  &:link,
+  &:visited {
+  }
 
-  &__cta {}
+  &:hover {
+  }
+
+  &:active {
+  }
 }

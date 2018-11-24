@@ -1,21 +1,25 @@
-.section {
-  &__container {}
-  
-  &__header {}
+.c-section {
+  padding: 10rem 0;
 
-  &__body {}
+  &-portfolio {
+    background-color: $color-white;
+  }
 
-  &__footer {}
+  &-about {
+    background-color: $color-white;
+  }
 
-  &__heading {}
+  &-contact {
+    background-color: $color-white;
+  }
 
-  &__sub-heading {}
+  &__heading {
+    color: $color-grey-darker;
+    font-size: 6rem;
+  }
 
-  &__text {}
-
-  &__list {}
-
-  &__icon {}
-
-  &__cta {}
+  &__sub-heading {
+    color: $color-grey-dark;
+    font-size: 4rem;
+  }
 }
