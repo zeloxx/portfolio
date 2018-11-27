@@ -92,13 +92,15 @@ body {
   cursor: pointer; }
 
 .c-contact-card {
-  background-color: #444;
+  background-color: #fff;
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  height: 33rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .c-contact-card__header {
     padding-top: 3.5rem; }
   .c-contact-card__heading {
-    color: #fff;
+    color: #444;
     font-size: 3rem; }
   .c-contact-card__text {
     color: #fff;
@@ -111,7 +113,7 @@ body {
       background-color: #5643fa; }
   .c-contact-card__footing {
     color: #fff;
-    font-size: 3rem; }
+    font-size: 2rem; }
 
 .c-hero {
   background-image: linear-gradient(to bottom, white, rgba(41, 152, 255, 0.8)), url(../img/hero-test.jpeg);
@@ -142,12 +144,12 @@ body {
   .c-hero__sub-heading {
     color: #666;
     display: block;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap; }
   .c-hero__text {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #666; }
   .c-hero__footer {
     background-color: #222222;
@@ -162,7 +164,7 @@ body {
 .c-icon {
   font-size: 6rem;
   border-radius: 10rem;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #fff;
   color: #444; }
   .c-icon--small {
@@ -174,7 +176,7 @@ body {
 
 .portfolio-card {
   width: 100%;
-  height: 25rem;
+  height: 40rem;
   background-image: url(../img/natours-hero.jpg);
   background-size: cover;
   background-position: center;
