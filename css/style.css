@@ -78,6 +78,8 @@ body {
   margin-bottom: 10.5rem !important; }
 
 .c-btn, .c-btn:link, .c-btn:visited {
+  background-color: white;
+  color: #444;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 3rem;
@@ -89,33 +91,27 @@ body {
   border: none;
   cursor: pointer; }
 
-.c-btn--white {
-  background-color: #fff;
-  color: #222; }
-
-.c-card {
-  background-color: #fff;
+.c-contact-card {
+  background-color: #444;
   display: inline-block;
   width: 100%; }
-  .c-card-contact {
-    background-color: #222; }
-    .c-card-contact__header {
-      padding-top: 3.5rem; }
-    .c-card-contact__heading {
-      color: #fff;
-      font-size: 3rem; }
-    .c-card-contact__text {
-      color: #fff;
-      font-size: 2rem; }
-    .c-card-contact__footer {
-      padding: 3rem; }
-      .c-card-contact__footer--tertiary-light {
-        background-color: #2998ff; }
-      .c-card-contact__footer--tertiary-dark {
-        background-color: #5643fa; }
-    .c-card-contact__footing {
-      color: #fff;
-      font-size: 3rem; }
+  .c-contact-card__header {
+    padding-top: 3.5rem; }
+  .c-contact-card__heading {
+    color: #fff;
+    font-size: 3rem; }
+  .c-contact-card__text {
+    color: #fff;
+    font-size: 2rem; }
+  .c-contact-card__footer {
+    padding: 3rem; }
+    .c-contact-card__footer--tertiary-light {
+      background-color: #2998ff; }
+    .c-contact-card__footer--tertiary-dark {
+      background-color: #5643fa; }
+  .c-contact-card__footing {
+    color: #fff;
+    font-size: 3rem; }
 
 .c-hero {
   background-image: linear-gradient(to bottom, white, rgba(41, 152, 255, 0.8)), url(../img/hero-test.jpeg);
@@ -139,8 +135,7 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 700;
-    text-transform: uppercase;
-    white-space: nowrap; }
+    text-transform: uppercase; }
   .c-hero__sub-heading {
     color: #666;
     display: block;
@@ -163,17 +158,94 @@ body {
 
 .c-icon {
   font-size: 6rem;
-  padding: 0rem;
+  border-radius: 10rem;
+  padding: 1rem;
   background-color: #fff;
   color: #444; }
-  .c-icon-contact-card {
-    padding: 1.5rem;
-    border-radius: 10rem;
+  .c-icon--small {
     font-size: 4rem; }
-    .c-icon-contact-card--tertiary-light {
-      color: #2998ff; }
-    .c-icon-contact-card--tertiary-dark {
-      color: #5643fa; }
+  .c-icon--color-tertiary-light {
+    color: #2998ff; }
+  .c-icon--color-tertiary-dark {
+    color: #5643fa; }
+
+.portfolio-card {
+  width: 100%;
+  height: 25rem;
+  background-image: url(../img/natours-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all .3s; }
+  .portfolio-card:hover {
+    cursor: pointer;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.13);
+    transform: scale(1.05); }
+  .portfolio-card:hover .portfolio-card__list {
+    opacity: 1;
+    transition: opacity 0.3s; }
+  .portfolio-card:hover .portfolio-card__link {
+    opacity: 1;
+    transition: opacity 0.3s; }
+  .portfolio-card:hover .portfolio-card__heading {
+    opacity: 1;
+    transition: opacity 0.3s; }
+  .portfolio-card:hover .portfolio-card__cover {
+    opacity: 1;
+    transition: opacity 0.3s; }
+  .portfolio-card__cover {
+    background-color: white;
+    height: 102%;
+    width: 102%;
+    opacity: 0; }
+  .portfolio-card__content-container {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .portfolio-card__heading {
+    opacity: 0;
+    color: #444;
+    font-size: 2rem; }
+  .portfolio-card__list {
+    opacity: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem; }
+  .portfolio-card__item {
+    display: inline-block;
+    padding: 0 .5rem; }
+  .portfolio-card__link {
+    opacity: 0;
+    text-decoration: none;
+    color: #444;
+    padding: 1rem 3rem;
+    display: inline-block;
+    font-size: 1rem;
+    border: solid #444 0.1rem;
+    text-transform: uppercase; }
+    .portfolio-card__link:hover {
+      color: #fff;
+      background-color: #444; }
+    .portfolio-card__link--primary {
+      color: #55c57a;
+      border: solid #55c57a 0.2rem; }
+      .portfolio-card__link--primary:hover {
+        color: #fff;
+        background-color: #55c57a; }
+
+.c-section {
+  padding: 10rem 0; }
+  .c-section__heading {
+    color: #444;
+    font-size: 6rem; }
+  .c-section__sub-heading {
+    color: #666;
+    font-size: 4rem; }
 
 .c-topnav {
   background-color: #fff;
@@ -220,21 +292,6 @@ body {
       font-size: 2rem; }
     .c-topnav__link:hover, .c-topnav__link:active {
       color: #5643fa; }
-
-.c-section {
-  padding: 10rem 0; }
-  .c-section-portfolio {
-    background-color: #fff; }
-  .c-section-about {
-    background-color: #fff; }
-  .c-section-contact {
-    background-color: #fff; }
-  .c-section__heading {
-    color: #444;
-    font-size: 6rem; }
-  .c-section__sub-heading {
-    color: #666;
-    font-size: 4rem; }
 
 .l-row {
   max-width: 114rem;
