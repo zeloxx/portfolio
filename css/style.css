@@ -118,14 +118,16 @@ body {
   background-size: cover;
   background-position: center;
   height: 85vh;
-  margin-top: 2rem;
+  margin-top: -1px;
+  z-index: -1;
   position: relative;
   text-align: center; }
   .c-hero__content-container {
+    width: 70%;
     max-width: 114rem;
     margin: 0 auto;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); }
   .c-hero__header {
@@ -135,7 +137,8 @@ body {
     display: block;
     font-size: 6rem;
     font-weight: 700;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: left; }
   .c-hero__sub-heading {
     color: #666;
     display: block;
@@ -250,7 +253,6 @@ body {
 .c-topnav {
   background-color: #fff;
   font-weight: 700;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1; }
