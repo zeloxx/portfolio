@@ -1,7 +1,7 @@
 .l-row {
   max-width: $grid-width;
   margin: 0 auto;
-  margin-bottom: $gutter-vertical;
+
   @include clearfix;
 
   @include respond(tab-port) {

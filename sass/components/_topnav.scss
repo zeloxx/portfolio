@@ -4,11 +4,16 @@
   top: 0;
   width: 100%;
   z-index: 1;
+  position: sticky;
 
   &__content-container {
     margin: 0 auto;
     max-width: $grid-width;
     position: relative;
+
+    @include respond(tab-land) {
+      max-width: 95%;
+    }
   }
 
   &__logo-box {
@@ -24,7 +29,7 @@
     color: $color-grey-dark;
     text-decoration: none;
     line-height: 2.5rem;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
 
     &:hover {
@@ -56,6 +61,10 @@
     display: inline-block;
     // text-transform: uppercase;
     padding: 3rem 3rem;
+
+    @include respond(phone) {
+      padding: 3rem 1rem;
+    }
 
     &:link,
     &:visited {

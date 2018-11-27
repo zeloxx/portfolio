@@ -1,6 +1,10 @@
 .c-section {
   padding: 10rem 0;
 
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+
   &__heading {
     color: $color-grey-darker;
     font-size: 6rem;

@@ -54,7 +54,7 @@
   &__heading {
     opacity: 0;
     color: $color-grey-darker;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   &__list {
@@ -73,11 +73,15 @@
     opacity: 0;
     text-decoration: none;
     color: $color-grey-darker;
-    padding: 1rem 3rem;
+    padding: 1.5rem 3rem;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border: solid $color-grey-darker .1rem;
     text-transform: uppercase;
+
+    @include respond(phone) {
+      padding: 2rem 4rem;
+    }
 
     &:hover {
       color: $color-white;

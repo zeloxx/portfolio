@@ -122,8 +122,10 @@ body {
   height: 85vh;
   margin-top: -1px;
   z-index: -1;
-  position: relative;
-  text-align: center; }
+  position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .c-hero {
+      height: 70vh; } }
   .c-hero__content-container {
     width: 70%;
     max-width: 114rem;
@@ -141,6 +143,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     text-align: left; }
+    @media only screen and (max-width: 37.5em) {
+      .c-hero__heading {
+        font-size: 4rem;
+        margin-top: 5rem; } }
   .c-hero__sub-heading {
     color: #666;
     display: block;
@@ -148,9 +154,15 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap; }
+    @media only screen and (max-width: 37.5em) {
+      .c-hero__sub-heading {
+        font-size: 3rem; } }
   .c-hero__text {
     font-size: 2.5rem;
     color: #666; }
+    @media only screen and (max-width: 37.5em) {
+      .c-hero__text {
+        font-size: 2.5rem; } }
   .c-hero__footer {
     background-color: #222222;
     width: 100%;
@@ -215,7 +227,7 @@ body {
   .portfolio-card__heading {
     opacity: 0;
     color: #444;
-    font-size: 2rem; }
+    font-size: 3rem; }
   .portfolio-card__list {
     opacity: 0;
     padding: 0;
@@ -228,11 +240,14 @@ body {
     opacity: 0;
     text-decoration: none;
     color: #444;
-    padding: 1rem 3rem;
+    padding: 1.5rem 3rem;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border: solid #444 0.1rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio-card__link {
+        padding: 2rem 4rem; } }
     .portfolio-card__link:hover {
       color: #fff;
       background-color: #444; }
@@ -245,6 +260,9 @@ body {
 
 .c-section {
   padding: 10rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .c-section {
+      padding: 5rem 0; } }
   .c-section__heading {
     color: #444;
     font-size: 6rem; }
@@ -257,11 +275,15 @@ body {
   font-weight: 700;
   top: 0;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  position: sticky; }
   .c-topnav__content-container {
     margin: 0 auto;
     max-width: 114rem;
     position: relative; }
+    @media only screen and (max-width: 75em) {
+      .c-topnav__content-container {
+        max-width: 95%; } }
   .c-topnav__logo-box {
     position: absolute;
     top: 50%;
@@ -272,7 +294,7 @@ body {
     color: #666;
     text-decoration: none;
     line-height: 2.5rem;
-    text-align: center;
+    text-align: left;
     vertical-align: middle; }
     .c-topnav__logo:hover {
       color: #5643fa; }
@@ -291,6 +313,9 @@ body {
     text-decoration: none;
     display: inline-block;
     padding: 3rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .c-topnav__link {
+        padding: 3rem 1rem; } }
     .c-topnav__link:link, .c-topnav__link:visited {
       color: #666;
       font-size: 2rem; }
@@ -299,8 +324,7 @@ body {
 
 .l-row {
   max-width: 114rem;
-  margin: 0 auto;
-  margin-bottom: 8rem; }
+  margin: 0 auto; }
   .l-row::after {
     content: "";
     clear: both;
