@@ -1,2 +1,11 @@
 .c-footer {
+  padding: 10rem 0;
+  background-color: $color-grey-darkest;
+  text-align: center;
+
+  &__icon-container {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+  }
 }

@@ -4,6 +4,8 @@
   padding: 1.5rem;
   background-color: $color-white;
   color: $color-grey-darker;
+  margin-left: 2rem;
+  margin-right: 2rem;
 
   &--small {
     font-size: 4rem;
@@ -16,6 +18,14 @@
   &--color-tertiary-dark {
     color: $color-tertiary-dark;
     
+  }
+
+  &--blue {
+    color: #0274B3
+  }
+
+  &--square {
+    border-radius: 0rem;
   }
     
 }
